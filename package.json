@@ -1,0 +1,31 @@
+{
+  "name": "advanced-knock-index",
+  "version": "1.0.0",
+  "description": "Master index repository for coordinating Advanced Knock and Advanced Ring multi-repo development",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/sync-index.js",
+    "check-dependencies": "node scripts/check-dependency-alignment.js",
+    "validate-links": "node scripts/validate-cross-repo-links.js",
+    "sync": "node scripts/sync-index.js",
+    "build-all": "./scripts/build-all.sh",
+    "test-all": "./scripts/test-all.sh",
+    "deploy-all": "./scripts/deploy-all.sh"
+  },
+  "keywords": [
+    "advanced-knock",
+    "advanced-ring",
+    "index",
+    "coordination",
+    "multi-repo"
+  ],
+  "author": "Advanced-Knock",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
+  "devDependencies": {
+    "@octokit/rest": "^20.0.0"
+  }
+}
