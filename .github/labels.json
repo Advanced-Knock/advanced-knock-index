@@ -1,0 +1,142 @@
+{
+  "scope:mobile": {
+    "name": "scope:mobile",
+    "color": "0E8A16",
+    "description": "Mobile app work"
+  },
+  "scope:backend": {
+    "name": "scope:backend",
+    "color": "1D76DB",
+    "description": "Backend API work"
+  },
+  "scope:frontend": {
+    "name": "scope:frontend",
+    "color": "FBCA04",
+    "description": "Frontend work"
+  },
+  "scope:index": {
+    "name": "scope:index",
+    "color": "D93F0B",
+    "description": "Index system work"
+  },
+  "scope:cross-product": {
+    "name": "scope:cross-product",
+    "color": "B60205",
+    "description": "Cross-product work"
+  },
+  "product:advanced-knock": {
+    "name": "product:advanced-knock",
+    "color": "0E8A16",
+    "description": "Advanced Knock product"
+  },
+  "product:advanced-ring": {
+    "name": "product:advanced-ring",
+    "color": "1D76DB",
+    "description": "Advanced Ring product"
+  },
+  "product:infrastructure": {
+    "name": "product:infrastructure",
+    "color": "FBCA04",
+    "description": "Infrastructure work"
+  },
+  "type:bug": {
+    "name": "type:bug",
+    "color": "D73A4A",
+    "description": "Bug fix"
+  },
+  "type:feature": {
+    "name": "type:feature",
+    "color": "0E8A16",
+    "description": "New feature"
+  },
+  "type:enhancement": {
+    "name": "type:enhancement",
+    "color": "1D76DB",
+    "description": "Enhancement"
+  },
+  "type:documentation": {
+    "name": "type:documentation",
+    "color": "FBCA04",
+    "description": "Documentation"
+  },
+  "type:refactor": {
+    "name": "type:refactor",
+    "color": "D93F0B",
+    "description": "Code refactoring"
+  },
+  "type:test": {
+    "name": "type:test",
+    "color": "B60205",
+    "description": "Testing"
+  },
+  "type:integration": {
+    "name": "type:integration",
+    "color": "5319E7",
+    "description": "Integration work"
+  },
+  "priority:critical": {
+    "name": "priority:critical",
+    "color": "B60205",
+    "description": "Critical priority"
+  },
+  "priority:high": {
+    "name": "priority:high",
+    "color": "D73A4A",
+    "description": "High priority"
+  },
+  "priority:medium": {
+    "name": "priority:medium",
+    "color": "FBCA04",
+    "description": "Medium priority"
+  },
+  "priority:low": {
+    "name": "priority:low",
+    "color": "0E8A16",
+    "description": "Low priority"
+  },
+  "status:needs-triage": {
+    "name": "status:needs-triage",
+    "color": "FBCA04",
+    "description": "Needs triage"
+  },
+  "status:in-progress": {
+    "name": "status:in-progress",
+    "color": "1D76DB",
+    "description": "In progress"
+  },
+  "status:blocked": {
+    "name": "status:blocked",
+    "color": "B60205",
+    "description": "Blocked"
+  },
+  "status:ready-for-review": {
+    "name": "status:ready-for-review",
+    "color": "0E8A16",
+    "description": "Ready for review"
+  },
+  "bug": {
+    "name": "bug",
+    "color": "D73A4A",
+    "description": "Something isn't working"
+  },
+  "enhancement": {
+    "name": "enhancement",
+    "color": "0E8A16",
+    "description": "New feature or request"
+  },
+  "integration": {
+    "name": "integration",
+    "color": "5319E7",
+    "description": "Cross-repo integration work"
+  },
+  "cross-product": {
+    "name": "cross-product",
+    "color": "B60205",
+    "description": "Cross-product work"
+  },
+  "needs-triage": {
+    "name": "needs-triage",
+    "color": "FBCA04",
+    "description": "Needs triage"
+  }
+}
