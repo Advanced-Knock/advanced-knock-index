@@ -1,0 +1,57 @@
+name: Cross-Repo CI
+
+on:
+  pull_request:
+    branches: [main, develop]
+  push:
+    branches: [main, develop]
+
+jobs:
+  check-dependencies:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Check dependency alignment
+        run: |
+          node scripts/check-dependency-alignment.js
+      
+      - name: Validate cross-repo links
+        run: |
+          node scripts/validate-cross-repo-links.js
+
+  build-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Build index
+        run: npm run build
+
+  trigger-downstream:
+    needs: [check-dependencies, build-index]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger downstream builds
+        run: |
+          echo "Downstream builds would be triggered here"
+          echo "This would use GitHub API or repository dispatch"
+          echo "to trigger builds in dependent repositories"
